@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo GM</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="circulos">
+        <div class="circulos__circulo circulos__circulo--azul"></div>
+        <div class="circulos__circulo circulos__circulo--verde"></div>
+        <div class="circulos__circulo circulos__circulo--morado"></div>
+    </div>
+    <div class="full" id="containerproyecto">
+        <header class="header">
+            <a href="index.html" class="header__logo">&lt; Gonzalo Gómez &gt;</a>
+            <nav class="header__nav">
+                <div class="icon-menu" id="boton-menu"></div>
+                <ul class="header__ul" id="menu-navegacion">
+                    <a href="index.html"><li class="header__li" id="primero">Inicio</li></a>
+                    <a href="portfolio.html"><li class="header__li header__li--activo">Portfolio</li></a>
+                    <a href="contacto.html"><li class="header__li">Contacto</li></a>
+                    <a download="CV - Gonzalo Gómez" href="CV-Gonzalo-Gomez.pdf" target="_blank"><li class="header__li header__li--download">Descargar CV</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main class="proyecto">
+            <a href="portfolio.html" class="proyecto__botonatras"><div class="icon-left"></div><p class="proyecto__textoatras">Atrás</p></a>
+            <p class="textoportfolio">Portfolio</p>
+            <div class="proyecto__info">
+                <p class="proyecto__titulo">Sketches</p>
+                <p class="proyecto__textoinfo">Algunos dibujos rápidos a papel y lápiz</p>
+            </div>
+            <div class="proyecto__galeria">
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch1.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch2.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch3.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch4.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch5.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch6.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch7.jpg" alt="">
+                </div>
+                <div class="proyecto__cajaimagen">
+                    <img loading="lazy" class="proyecto__img" src="img/sketches/sketch8.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__rrss">
+                <div class="footer__cajaiconos">
+                    <a href="https://www.behance.net/gonzalogomezdesign" target="blank"><img loading="lazy" src="img/behance.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/gonzalo-gomez-martinez/" target="blank"><img loading="lazy" src="img/linkedin.png" alt=""></a>
+                    <a href="https://www.instagram.com/gonzalogomez.doodles/" target="blank"><img loading="lazy" src="img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/gonzalogmart" target="blank"><img loading="lazy" src="img/twitter.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__correo">
+                <img loading="lazy" src="img/email.png" alt="">
+                <p>gonzalo.gm.utiel@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+    <div class="capaModal" id="capaModal">
+        <div class="btnCerrar" id="btnCerrar">
+            <div class="icon-cancel"></div>
+        </div>
+        <div class="cajaimgmodal"><img loading="lazy" src="img/portraits/Portrait-01.jpg" id="imgModal" alt=""></div>
+    </div>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
