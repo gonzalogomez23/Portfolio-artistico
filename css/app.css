@@ -174,7 +174,7 @@ main{
 }
 
 .hero__textocontacto{
-    font-family: 'Neucha';
+    /* font-family: 'Neucha'; */
     color: #fff;
     font-size: 1.3rem; 
     margin-bottom: 2rem;
@@ -570,7 +570,7 @@ footer{
 
 
     .hero__textocontacto{
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 14px;
         margin: 0;
     }
