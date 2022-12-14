@@ -17,6 +17,7 @@ img, picture, video, iframe, figure{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .circulos{
@@ -68,7 +69,7 @@ a{
 header{
     width: 100%;
     top: 0;
-    height: 55px;
+    height: 3.5rem;
     position: fixed;
     color: #fff;
     z-index: 2;
@@ -82,14 +83,14 @@ header{
 .header__logo{
     display: flex;
     position: absolute;
-    margin-left: 20px;
+    margin-left: 1.3rem;
     float: left;
     z-index: 3;
     font-family: 'Comforter';
     margin-top: 0.5rem;
     cursor: pointer;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.7em;
 }
 
 .header__nav{
@@ -97,7 +98,7 @@ header{
     position: absolute;
     z-index: 3;
     width: 100%;
-    height: 50px;
+    height: 3rem;
     z-index: 0;
 }
 
@@ -109,15 +110,14 @@ header{
     color: white;
     float: right;
     right: 0px;
-    border-radius: 5px;
 }
 
 .header__ul{
     width: 100%;
     height: 100vh;
-    margin-top: 55px;
+    margin-top: 3.5rem;
     transform: translateX(100%);
-    background-color: #091d35; 
+    background-color: #0d1928; 
     transition: 0.5s;
 }
 
@@ -132,7 +132,7 @@ header{
     cursor: pointer;
     text-align: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .header__li:hover{
@@ -146,18 +146,18 @@ header{
 
 main{
     position: relative;
-    padding-top: 55px;
+    padding-top: 3.5rem;
     z-index: 1;
 }
 
 .hero__h2{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     padding-left: 10%;
     padding-right: 10%;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     line-height: 2.8rem;
 }
 
@@ -166,7 +166,7 @@ main{
 }
 
 .subtitulo{
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .hero__contacto{
@@ -174,10 +174,9 @@ main{
 }
 
 .hero__textocontacto{
-    /* font-family: 'Neucha'; */
     color: #fff;
-    font-size: 1.3rem; 
-    margin-bottom: 2rem;
+    font-size: 1.3em; 
+    margin-bottom: 1.7rem;
     text-align: center;
 }
 
@@ -188,7 +187,7 @@ main{
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.163);
     border: 2px solid white;
-    box-shadow: 5px 10px 15px #040e2d7d;
+    box-shadow: 5px 10px 15px #0f173071;
     transition: 0.1s;
     padding: 0.5rem;
     padding-top: 1.1rem;
@@ -216,7 +215,7 @@ main{
 }
 
 .hero__img img{
-    width: 300px;
+    width: 19rem;
 }
 
 .hero__rrss{
@@ -226,7 +225,7 @@ main{
 }
 
 .hero__rrss img{
-    width: 20px;
+    width: 1.3rem;
     cursor: pointer;
 }
 
@@ -235,7 +234,7 @@ main{
 }
 
 .hero__rrss a{
-    margin: 20px;
+    margin: 1.3rem;
 }
 
 .hero__rrss img:hover{
@@ -250,7 +249,7 @@ main{
 
 .servicios__titulo{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     padding: 1.2rem;
     font-weight: 600;
 }
@@ -310,7 +309,7 @@ main{
 
 .servicios__cardhover{
     width: 100%;
-    font-size: 1rem;
+    font-size: 1em;
     transition: 0.6s;
     transform: translateY(80%);
     opacity: 0;
@@ -323,6 +322,7 @@ main{
 
 .servicios__ul{
     border-top: solid 2px #fff;
+    padding-top: 1.5rem;
 }
 
 .servicios__li{
@@ -330,7 +330,7 @@ main{
     padding: .2rem;
 }
 
-.servicios__button{
+/* .servicios__button{
     cursor: pointer;
     padding: 1rem;
     border-radius: 2rem;
@@ -341,7 +341,7 @@ main{
 .servicios__button:hover{
     background-color: rgba(255, 255, 255, 0.63);
 }
-
+ */
 .servicios__card:hover .servicios__cardhover{
     transform: translateY(0px);
     opacity: 1;
@@ -351,6 +351,21 @@ main{
 .servicios__card:hover .servicios__cardcontent{
     opacity: 0;
     transition: 0.5s;
+}
+
+.servicios__linkportfolio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.servicios__a{
+    border-bottom: 3px solid #fff ;
+}
+
+.servicios__a:hover{
+    opacity: 0.6 ;
 }
 
 .sobremi{
@@ -369,21 +384,21 @@ main{
 
 .sobremi__titulo{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     padding-top: 1rem;
     padding-bottom: .7rem;
     font-weight: 600;
 }
 
 .sobremi__imagen{
-    max-width: 300px;
+    max-width: 19rem;
     display: flex;
     justify-content: center;
     margin: 2rem auto;
 }
 
 .sobremi__texto{
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -403,8 +418,8 @@ footer{
 }
 
 .footer__rrss img{
-    width: 20px;
-    margin: 20px;
+    width: 1.3rem;
+    margin: 1.3rem;
     cursor: pointer;
 }
 
@@ -415,7 +430,7 @@ footer{
 
 .footer__correo{
     color: white;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -423,7 +438,7 @@ footer{
 }
 
 .footer__correo img{
-    width: 20px;
+    width: 1.2rem;
     margin-right: 0.6rem;
 }
 
@@ -437,7 +452,7 @@ footer{
     }
 
     .header{
-        height: 90px;
+        height: 5.7rem;
         padding-top: 0.65rem;
     }
 
@@ -450,16 +465,16 @@ footer{
         float: left;
         margin-left: 2.5em;
         margin-top: 0.4rem;
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
 
     .header__nav{
         display: flex;
         flex-wrap: nowrap;
         width: auto;
-        height: 80px;
+        height: 5rem;
         right: 0;
-        padding: 15px;
+        padding: 1rem;
     }
 
     .header__ul{
@@ -469,7 +484,7 @@ footer{
         width: 34rem;
         background-color: rgba(255, 255, 255, 0);
         align-items: center;
-        margin-right: 100px;
+        margin-right: 6.2rem;
         display: flex;
         justify-content:space-around;
     }
@@ -546,7 +561,7 @@ footer{
     }
 
     .hero__h2{
-        font-size: 3.5rem;
+        font-size: 3.5em;
         line-height: 4.5rem;
         padding: 0rem;
         padding-right: 3rem;
@@ -561,7 +576,7 @@ footer{
     
     .hero__contacto{
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         padding: 1rem;
         margin-right: 4rem;
@@ -571,7 +586,6 @@ footer{
 
     .hero__textocontacto{
         font-size: 1.5rem;
-        border-radius: 14px;
         margin: 0;
     }
 
@@ -609,9 +623,9 @@ footer{
     }
 
     .hero__rrss img{
-        width: 25px;
-        height: 25px;
-        margin: 15px;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 1rem;
     }
 
     .servicios{
@@ -622,7 +636,7 @@ footer{
     .servicios__titulo{
         text-align: left;
         margin-left: 4rem;
-        font-size: 4rem;
+        font-size: 4em;
         padding: 2rem;
         font-weight: 700;
     }
@@ -644,7 +658,7 @@ footer{
 
     .servicios__h3{
         padding: 2rem 0rem 1rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     
@@ -660,6 +674,11 @@ footer{
         padding: .5rem;
     }
 
+    .servicios__linkportfolio{
+        padding-top: 3rem;
+        font-size: 1.25em;
+    }
+    
 
     .sobremi__container{
         display: flex;
@@ -673,13 +692,13 @@ footer{
     .sobremi__titulo{
         text-align: left;
         margin-left: 2rem;
-        font-size: 4rem;
+        font-size: 4em;
         padding: 2rem;
         font-weight: 700;
     }
 
     .sobremi__texto{
-        font-size: 1rem;
+        font-size: 1em;
         text-align: left;
         padding-right: 2rem;
         padding-bottom: 2rem;
@@ -710,14 +729,14 @@ footer{
     }
 
     .footer__rrss img{
-        width: 30px;
+        width: 1.8rem;
         padding-top: 0rem;
         padding-bottom: 0rem;
     }
 
     .footer__correo{
         width: 40%;
-        font-size: 1rem;
+        font-size: 1em;
     }
 }
 
@@ -740,7 +759,7 @@ footer{
     width: 100%;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: 600;
     color: white;
     text-align: center;
@@ -748,9 +767,9 @@ footer{
 
 .galeria{
     display: grid;
-    column-gap: 0.8em;
+    column-gap: 0.8rem;
     grid-template-columns: 1fr;
-    row-gap: 0.8em;
+    row-gap: 0.8rem;
     width: 95%;
     margin: auto;
 }
@@ -760,7 +779,7 @@ footer{
     position: relative;
     padding-top: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.6rem;
     cursor: pointer;
 }
 
@@ -782,7 +801,7 @@ footer{
     color: white;
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 2em;
     display: flex;
     opacity: 0;
     font-weight: 600;
@@ -817,7 +836,7 @@ footer{
     }
 
     .galeria__imghover{
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
 
     .galeria__img img{
@@ -857,7 +876,7 @@ footer{
     border-radius: 8px;
     display: flex;
     padding: 0.3rem;
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     margin-top: .6rem;
 }
@@ -881,19 +900,19 @@ footer{
 }
 
 .proyecto__titulo{
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 600;
 }
 
 .proyecto__textoinfo{
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 .proyecto__galeria{
     display: grid;
-    column-gap: 0.8em;
+    column-gap: 0.8rem;
     grid-template-columns: 1fr;
-    row-gap: 0.8em;
+    row-gap: 0.8rem;
     width: 90%;
     margin: auto;
     margin-top: 1rem;
@@ -902,7 +921,7 @@ footer{
 
 .proyecto__cajaimagen{
     width: 100%;
-    border-radius: 30px;
+    border-radius: 1.9rem;
     cursor: pointer;
 }
 
@@ -947,9 +966,7 @@ footer{
     z-index: 999;
     right: 10px;
     margin-top: 20px;
-    padding: 10px;
     font-family: sans-serif;
-    font-size: 30px;
     font-weight: 700;
     text-align: center;
     cursor: pointer;
@@ -957,7 +974,7 @@ footer{
 }
 
 .icon-cancel{
-    font-size: 1.5rem;
+    font-size: 24px;
     background-color: rgb(195, 42, 42);
     border: solid 2px rgb(255, 255, 255);
     padding: 4px 0px;
@@ -986,11 +1003,11 @@ footer{
     }
 
     .proyecto__titulo{
-        font-size: 3.5rem;
+        font-size: 3.5em;
     }
 
     .proyecto__textoinfo{
-        font-size: 1rem;
+        font-size: 1em;
         padding-top: 1rem;
         padding-bottom: 0.5rem;
     }
@@ -1001,7 +1018,7 @@ footer{
         background-color: rgba(0, 0, 0, 0.321);
         margin-left: 2rem;
         border: 2px solid white;
-        border-radius: 10px;
+        border-radius: 0.5rem;
         text-decoration: none;
         display: flex;
         padding: 0.5rem 1rem;
@@ -1031,13 +1048,13 @@ footer{
 .contacto__titulo{
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 600;
     color: white;
 }
 
 .contacto__form{
-    padding: 1em;
+    padding: 1rem;
     max-width: 700px;
     margin: auto;
 }
@@ -1049,18 +1066,18 @@ footer{
     width: 100%;
     margin-bottom: 1.5em;
     padding: 1em;
-    border-radius: 8px;
+    border-radius: .5rem;
     border: solid 2px rgb(222, 222, 222);
     background-color: rgba(255, 255, 255, 0.041);
 }
 
 .contacto__form p{
     color: white;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .contacto__input--mensaje{
-    padding-bottom: 7em;
+    padding-bottom: 7rem;
 }
 
 .contacto__cajasubmit{
@@ -1070,10 +1087,10 @@ footer{
 }
 
 .contacto__submit{
-    width: 86px;
-    height: 43px;
+    width: 5.4rem;
+    height: 2.7rem;
     margin: auto;
-    border-radius: 10px;
+    border-radius: .6rem;
     cursor: pointer;
     border: solid 2px white;
     background-color: rgba(0, 0, 0, 0.17);
@@ -1088,7 +1105,7 @@ footer{
 
 @media screen and (min-width: 960px){
     .contacto__titulo{
-        font-size: 4rem;
+        font-size: 4em;
     }
 
     .contacto__input{
@@ -1096,10 +1113,10 @@ footer{
     }
     
     .contacto__submit{
-        width: 100px;
-        height: 50px;
-        border-radius: 15px;
-        font-size: 1rem;
+        width: 6.2rem;
+        height: 3.1rem;
+        border-radius: .7rem;
+        font-size: 1em;
     }
 }
 
