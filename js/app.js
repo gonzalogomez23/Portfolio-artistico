@@ -14,7 +14,7 @@ for(let i=0; i < apartados.length; i++){
 }
 
 /* COLOR NAVBAR AL SCROLLEAR */
-let header = document.querySelector("header")
+/* let header = document.querySelector("header")
 let altura = header.offsetTop
 
 window.addEventListener("scroll", calcular)
@@ -25,7 +25,7 @@ function calcular (){
     }else{
         header.classList.remove("scroll_web")
     }
-}
+} */
 
 /* GALERÍA PROYECTOS */
 let imagenes = document.getElementsByClassName("proyecto__img")
