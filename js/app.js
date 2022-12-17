@@ -14,7 +14,8 @@ for(let i=0; i < apartados.length; i++){
 }
 
 /* COLOR NAVBAR AL SCROLLEAR */
-/* let header = document.querySelector("header")
+let logo = document.querySelector("header__logo")
+let header = document.querySelector(".header--scroll")
 let altura = header.offsetTop
 
 window.addEventListener("scroll", calcular)
@@ -25,7 +26,7 @@ function calcular (){
     }else{
         header.classList.remove("scroll_web")
     }
-} */
+}
 
 /* GALERÍA PROYECTOS */
 let imagenes = document.getElementsByClassName("proyecto__img")
@@ -33,10 +34,6 @@ let capaModal = document.getElementById("capaModal")
 let imgModal = document.getElementById("imgModal")
 let btnCerrar = document.getElementById("btnCerrar")
 let full = document.getElementById("containerproyecto")
-
-/* let next = document.getElementById("btn-next")
-let previous = document.getElementById("btn-prev") */
-
 let totalImg = ["img/portraits/Portrait 01.jpg", "img/portraits/Portrait 02.jpg", "img/portraits/Portrait 03.jpg", "img/portraits/Portrait 04.jpg", "img/portraits/Portrait 05.jpg", "img/portraits/Portrait 06.jpg", "img/portraits/Portrait 08.jpg", "img/portraits/Portrait 09.jpg", "img/portraits/Portrait 10.jpg"]
 let imagenInicial = 0
 
