@@ -55,7 +55,7 @@ a{
 }
 
 .full{
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
     height: 100%;
     font-family: 'Raleway';
     font-weight: 500;
@@ -75,7 +75,7 @@ header{
 }
 
 .scroll_web{
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
 }
 
 .header__logo{
@@ -111,7 +111,7 @@ header{
     float: right;
     right: 0px;
     box-shadow: 3px 3px 7px #00000038;
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
     position: absolute;
     z-index: 4;
 }
@@ -122,7 +122,7 @@ header{
     padding-top: 3.8rem;
     transform: translateX(100%);
     transition: 0.5s;
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
 }
 
 .aparecer{
@@ -145,7 +145,7 @@ header{
 .header__li--download{
     padding: .7rem 1rem;
     border-radius: 3rem;
-    border: solid 2px #101010;
+    border: solid 2px #434343;
     transition: 0.1s;
     width: fit-content;
     margin: auto;
@@ -178,12 +178,12 @@ main{
     line-height: 5rem;
 }
 
-.negrita{
+.hero__titulo{
     font-family: 'Comforter';
     font-size: 2.5em;
 }
 
-.subtitulo{
+.hero__subtitulo{
     font-size: .8em;
     font-weight: 600;
     background-color: rgb(255, 192, 44);
@@ -201,20 +201,17 @@ main{
     font-size: 1em;
     text-align: center;
     margin-bottom: 2rem;
-    border: solid 2px #101010;
-    /* box-shadow:  5px 5px 13px #0000004c; */
-    /* ,
-    -5px -5px 13px #ffffff */
+    border: solid 2px #434343;
     transition: 0.3s;
 }
 
 .hero__linkportfolio:hover{
-    /* background-color: rgb(229, 236, 243);
-    box-shadow:  2px 2px 10px #0000004c */
-    /* ,
-    -2px -2px 10px #ffffffb0; */
-    background-color: #101010;
-    color: rgb(245, 250, 255);
+    /* background-color: #4090ff;
+    border: solid 2px #4090ff;
+    color: rgb(243, 246, 248); */
+    background-color: #4090ff17;
+    border: solid 2px #006aff;
+    color: #006aff; 
 }
 
 .hero__imagenes{
@@ -282,7 +279,7 @@ main{
 
 .servicios__titulo{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.2em;
     padding: 1.2rem;
     font-weight: 600;
 }
@@ -326,8 +323,10 @@ main{
 .servicios__h3{
     width: 100%;
     text-align: center;
-    font-weight: 400;
-    padding: 1rem 0rem;
+    font-weight: 500;
+    font-size: 1.6em;
+    padding-top: 1.8rem;
+    padding-bottom: 1rem;
 }
 
 .servicios__img{
@@ -338,13 +337,11 @@ main{
 
 .servicios__img img{
     margin: auto;
-    /* -webkit-filter: drop-shadow(0px 0px 10px rgba(18, 16, 36, 0.8));
-    filter: drop-shadow(0px 0px 10px rgba(18, 16, 36, 0.8)); */
 }
 
 .servicios__cardhover{
     width: 100%;
-    font-size: 1em;
+    font-size: 1.3em;
     transition: 0.6s;
     transform: translateY(80%);
     opacity: 0;
@@ -352,12 +349,13 @@ main{
     top: 0;
     text-align: center;
     padding: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
 }
 
 .servicios__ul{
     border-top: solid 2px #101010;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .servicios__li{
@@ -404,7 +402,7 @@ main{
 
 .sobremi__titulo{
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     padding-top: 1rem;
     padding-bottom: .7rem;
     font-weight: 600;
@@ -507,7 +505,7 @@ footer{
         max-width: 640px;
         border-radius: 1rem;
         box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.085);
-        background-color: rgb(245, 250, 255);
+        background-color: rgb(243, 246, 248);
     }
 
     .header__ul{
@@ -552,7 +550,7 @@ footer{
 
     .header__li--download{
         margin-top: 0;
-        border-bottom: 2px solid #101010;
+        border-bottom: 2px solid #434343;
         padding: .8rem 1rem;
     }
 
@@ -581,6 +579,12 @@ footer{
     .hero__info{
         width: 50%;
         padding-top: 9rem;
+    }
+    
+    .hero__subtitulo{
+        font-size: .6em;
+        padding: .4rem .8rem;
+        border-radius: .8rem;
     }
 
     .hero__imagenes{
@@ -877,7 +881,7 @@ footer{
     position: fixed;
     margin-left: 2rem;
     border: 2px solid #101010;
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
     border-radius: 8px;
     display: flex;
     padding: .4rem .3rem;
@@ -889,7 +893,7 @@ footer{
 
 .proyecto__botonatras:hover{
     background-color: #101010;
-    color: rgb(245, 250, 255);
+    color: rgb(243, 246, 248);
 }
 
 .proyecto__textoatras{
@@ -1095,12 +1099,12 @@ footer{
     cursor: pointer;
     transition: 0.2s;
     border-radius: 2rem;
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(243, 246, 248);
 }
 
 .contacto__submit:hover{
     background-color: #101010;
-    color: rgb(245, 250, 255);
+    color: rgb(243, 246, 248);
 }
 
 @media screen and (min-width: 960px){
