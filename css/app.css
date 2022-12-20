@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Raleway:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
 @font-face {
     font-family: 'DK Lemon Yellow Sun';
@@ -599,14 +599,20 @@ footer{
 
     .hero__info{
         width: 45%;
-        padding-top: 10rem;
+        padding-top: 8rem;
+    }
+
+    .hero__h1{
+        font-size: 4em;
+        padding: 1rem;
+        margin-bottom: 1rem;
     }
     
-    .hero__h2{
+    /* .hero__h2{
         font-size: .6em;
         padding: 0rem .8rem;
         border-radius: .7rem;
-    }
+    } */
 
     .hero__imagenes{
         width: 35%;
@@ -764,7 +770,6 @@ footer{
     
     .hero__h2{
         font-size: 1.6rem;
-        line-height: 2.5rem;
     }
     
     .hero__img{
