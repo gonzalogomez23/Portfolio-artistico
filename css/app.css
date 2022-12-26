@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Raleway:wght@400;500;700&display=swap');
 
-@font-face {
+/* @font-face {
     font-family: 'DK Lemon Yellow Sun';
     src: url(../css/DK\ Lemon\ Yellow\ Sun.otf);
-}
+} */
 
 *{
     margin: 0;
@@ -71,7 +71,6 @@ a{
 header{
     width: 100%;
     top: 0;
-    height: 3.8rem;
     position: fixed;
     color: #101010;
     z-index: 2;
@@ -86,13 +85,13 @@ header{
 .header__logo{
     display: flex;
     position: absolute;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
     margin-left: 1.3rem;
     left: 0;
     z-index: 3;
-    /* font-family: 'Comforter'; */
-    font-family: 'DK Lemon Yellow Sun';
-    margin-top: .9rem;
-    cursor: pointer;
+    font-family: 'Comforter';
     color: #101010;
     font-size: 1.7em;
 }
@@ -171,10 +170,12 @@ main{
     position: relative;
     padding-top: 4.1rem;
     z-index: 1;
+}
+
+.hero{
     max-width: 1600px;
     margin: auto;
 }
-
 
 .hero__titulo{
     color: #101010;
@@ -184,10 +185,14 @@ main{
 }
 
 .hero__h1{
-    font-family: 'DK Lemon Yellow Sun';
-    font-size: 3em;
+    font-family: 'Comforter';
+    font-size: 3.5em;
     margin-bottom: 1.4rem;
     font-weight: normal;
+}
+
+.hero__alturaTexto{
+    font-size: 1.1em;
 }
 
 .hero__h2{
@@ -202,7 +207,6 @@ main{
     height: min-content;
 }
 
-
 .hero__linkportfolio{
     width:fit-content;
     padding: 1rem 1.6rem;
@@ -212,15 +216,13 @@ main{
     text-align: center;
     border: solid 2px #434343;
     transition: 0.2s;
+    background-color: rgb(243, 246, 248);
 }
 
 .hero__linkportfolio:hover{
     background-color: #4090ff;
     border: solid 2px #4090ff;
     color: rgb(243, 246, 248);
-    /* background-color: #4090ff17;
-    border: solid 2px #006aff;
-    color: #006aff;  */
 }
 
 .hero__imagenes{
@@ -231,7 +233,6 @@ main{
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
-
 }
 
 .hero__img{
@@ -298,6 +299,8 @@ main{
 .servicios{
     color: #101010;
     padding-bottom: 3rem;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .servicios__titulo{
@@ -413,11 +416,14 @@ main{
     justify-content: center;
     background-color: #0000000b;
     padding-bottom: 1rem;
+    width: 100%;
 
 }
 
 .sobremi__container{
     width: 90%;
+    margin: auto;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -430,7 +436,7 @@ main{
 }
 
 .sobremi__imagen{
-    max-width: 19rem;
+    max-width: 17rem;
     display: flex;
     justify-content: center;
     margin: 2rem auto;
@@ -508,10 +514,6 @@ footer{
     }
 
     .header__logo{
-        /* float: left;
-        margin-left: 2.5em;
-        margin-top: 0.4rem;
-        font-size: 2.5em; */
         display: none;
     }
 
@@ -599,7 +601,7 @@ footer{
 
     .hero__info{
         width: 45%;
-        padding-top: 8rem;
+        padding-top: 7rem;
     }
 
     .hero__h1{
@@ -607,12 +609,6 @@ footer{
         padding: 1rem;
         margin-bottom: 1rem;
     }
-    
-    /* .hero__h2{
-        font-size: .6em;
-        padding: 0rem .8rem;
-        border-radius: .7rem;
-    } */
 
     .hero__imagenes{
         width: 35%;
@@ -646,16 +642,12 @@ footer{
     }
 
     .servicios{
-        /* margin-top: 2rem; */
         margin-bottom: 2rem;
     }
 
     .servicios__titulo{
-        /* text-align: center; */
-        /* margin-left: 4rem; */
         font-size: 4em;
         padding: 2rem;
-        /* font-weight: 700; */
     }
 
     .servicios__container{
@@ -687,10 +679,6 @@ footer{
         margin-top: 3rem;
     }
 
-    .servicios__li{
-        /* padding: .5rem; */
-    }
-
     .servicios__linkportfolio{
         padding-top: 3rem;
         font-size: 1.25em;
@@ -711,21 +699,20 @@ footer{
         margin-left: 2rem;
         font-size: 4em;
         padding: 2rem;
-        /* font-weight: 700; */
     }
 
     .sobremi__texto{
         font-size: 1em;
         text-align: left;
-        padding-right: 2rem;
+        padding-right: 4rem;
         padding-bottom: 2rem;
     }
 
     .sobremi__imagen{
         width: 30%;
         max-width: max-content;
-        padding-top: 4rem;
-        padding-bottom: 2rem;
+        /* padding: 2rem 4rem; */
+        padding-top: 2rem;
     }
 
     .sobremi__imagen img{
@@ -763,7 +750,7 @@ footer{
     }
     
     .hero__h1{
-        font-size: 5em;
+        font-size: 5.5em;
         padding: 1rem;
         margin-bottom: 1rem;
     }
@@ -1000,8 +987,6 @@ footer{
     margin: auto;
 }
 
-
-
 .btnCerrar {
     position: absolute;
     z-index: 999;
@@ -1034,10 +1019,6 @@ footer{
 }
 
 @media screen and (min-width: 960px) {
-    .proyecto{
-        /* margin-top: 1.5rem; */
-    }
-    
     .textoportfolio{
         display: none;
     }
