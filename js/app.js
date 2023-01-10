@@ -14,9 +14,7 @@ for(let i=0; i < apartados.length; i++){
 }
 
 /* COLOR NAVBAR AL SCROLLEAR */
-let logo = document.querySelector("header__logo")
 let header = document.querySelector(".header--scroll")
-let altura = header.offsetTop
 
 window.addEventListener("scroll", calcular)
 

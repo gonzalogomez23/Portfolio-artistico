@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Raleway:wght@400;500;700&display=swap');
 
-/* @font-face {
-    font-family: 'DK Lemon Yellow Sun';
-    src: url(../css/DK\ Lemon\ Yellow\ Sun.otf);
-} */
 
 *{
     margin: 0;
@@ -30,37 +26,41 @@ a{
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 0;
     top: 0;
     left: 0;
-    z-index: 0;
 }
 
-.circulos__circulo{
+
+.circulo{
     position: absolute;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    filter:blur(4em)
+    width: 300px;
+    height: 300px;
+    transform: scaleY(200%);
+    filter:blur(56px);
 }
 
-.circulos__circulo--azul{
-    background-color: #006aff;
+.circulo1{
+    rotate: 180deg;
+    top: -150px;
+    left: -140px;
 }
 
-.circulos__circulo--verde{
-    background-color: #00ff99;
-    left: 35%;
-    top: 90%;
+.circulo1 .path{
+    fill: #ffb700;
 }
 
-.circulos__circulo--amarillo{
-    background-color: rgb(255, 179, 0);
-    right: -5%;
-    top: 30%;
+
+.circulo2{
+    right: -150px;
+    bottom: -140px;
+}
+
+.circulo2 .path{
+    fill: #FF8008;
 }
 
 .full{
-    background-color: rgb(243, 246, 248);
     height: 100%;
     font-family: 'Raleway';
     font-weight: 500;
@@ -70,6 +70,7 @@ a{
 
 header{
     width: 100%;
+    min-height: 3.7rem;
     top: 0;
     position: fixed;
     color: #101010;
@@ -78,14 +79,19 @@ header{
     justify-content: center;
 }
 
+.header--scroll{
+    transition: 0.2s;
+}
+
 .scroll_web{
-    background-color: rgb(243, 246, 248);
+    background-color: white;
+    transition: 0.2s;
 }
 
 .header__logo{
     display: flex;
     position: absolute;
-    height: 3.8rem;
+    min-height: 3.8rem;
     display: flex;
     align-items: center;
     margin-left: 1.3rem;
@@ -116,7 +122,7 @@ header{
     float: right;
     right: 0px;
     box-shadow: 1px 1px 7px #00000038;
-    background: rgb(243, 246, 248);
+    background-color: white;
     position: absolute;
     z-index: 4;
 }
@@ -127,7 +133,7 @@ header{
     padding-top: 3.8rem;
     transform: translateX(100%);
     transition: 0.5s;
-    background-color: rgb(243, 246, 248);
+    background-color: white;
 }
 
 .aparecer{
@@ -144,7 +150,7 @@ header{
 }
 
 .header__li:hover{
-    background-color: rgb(223, 232, 239);
+    background-color: rgb(230, 236, 241);
 }
 
 .header__li--download{
@@ -159,7 +165,8 @@ header{
 
 .header__li--download:hover{
     color: white;
-    background-color: #101010;
+    background-color: #0085ff;
+    border: solid 2px #0085ff;
 }
 
 #primero{
@@ -198,7 +205,7 @@ main{
 .hero__h2{
     font-size: 1.2em;
     font-weight: 700;
-    background-color: rgb(255, 198, 66);
+    background: linear-gradient(to right, #FF8008, #FFC837);
     border-radius: .6rem;
     color: white;
     margin: 1rem auto;
@@ -209,25 +216,28 @@ main{
 
 .hero__linkportfolio{
     width:fit-content;
-    padding: 1rem 1.6rem;
+    padding: .8rem 1.3rem;
     margin: .8rem auto;
-    border-radius: .8rem;
+    border-radius: .7rem;
     font-size: 1em;
     text-align: center;
-    border: solid 2px #434343;
-    transition: 0.2s;
-    background-color: rgb(243, 246, 248);
+    /* border: solid 2px #434343; */
+    border: solid 3px #0085ff;
+    transition: 0.15s;
+    background-color: white;
+    color: #0085ff;
+    font-weight: 600;
 }
 
 .hero__linkportfolio:hover{
-    background-color: #4090ff;
-    border: solid 2px #4090ff;
-    color: rgb(243, 246, 248);
+    background-color: #0085ff;
+    border: solid 3px #0085ff;
+    color: white;
 }
 
 .hero__imagenes{
     position: relative;
-    height: 24rem;
+    min-height: 24rem;
     width: 80%;
     max-width: 400px;
     margin: auto;
@@ -282,6 +292,7 @@ main{
 .hero__rrss img{
     width: 1.3rem;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .hero__cajaiconos{
@@ -293,7 +304,9 @@ main{
 }
 
 .hero__rrss img:hover{
-    opacity: 0.5;
+    scale: 1.2;
+    transition: 0.2s;
+    rotate: 4deg;
 }
 
 .servicios{
@@ -301,13 +314,14 @@ main{
     padding-bottom: 3rem;
     max-width: 1600px;
     margin: auto;
+    margin-top: .5rem;
 }
 
 .servicios__titulo{
     text-align: center;
     font-size: 2.2em;
     padding: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .servicios__container{
@@ -405,16 +419,20 @@ main{
     padding-top: 2rem;
 }
 
+.servicios__a{
+    transition: 0.3s;
+}
 
 .servicios__a:hover{
-    opacity: 0.6 ;
+    color: #0085ff;
+    transition: 0.1s;
 }
 
 .sobremi{
     color: #101010;
     display:inline-block;
     justify-content: center;
-    background-color: #0000000b;
+    background-color: #9dafb925;
     padding-bottom: 1rem;
     width: 100%;
 
@@ -432,7 +450,7 @@ main{
     font-size: 2.2em;
     padding-top: 1rem;
     padding-bottom: .7rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .sobremi__imagen{
@@ -445,6 +463,8 @@ main{
 .sobremi__texto{
     font-size: 0.8em;
     text-align: center;
+    padding-bottom: 1rem;
+    line-height: 1.5em;
 }
 
 footer{
@@ -488,20 +508,26 @@ footer{
 }
 
 @media screen and (min-width: 960px){
-    .circulos__circulo{
+    .circulo{
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 500px;
+        height: 500px;
         border-radius: 50%;
-        filter:blur(8em)
+        filter:blur(112px);
     }
 
-    .circulos__circulo--azul{
-        top: -50px;
+    .circulo1{
+        top: -240px;
+        left: -230px;
+    }
+
+    .circulo2{
+        right: -240px;
+        bottom: -230px;
     }
 
     .header{
-        height: 5.7rem;
+        min-height: 5.7rem;
     }
 
     .scroll_web{
@@ -521,14 +547,14 @@ footer{
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
-        height: 5rem;
+        min-height: 5rem;
         margin-top: 1rem;
         justify-content: center;
         align-items: center;
         max-width: 640px;
         border-radius: 1rem;
         box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.085);
-        background-color: rgb(243, 246, 248);
+        background-color: white;
     }
 
     .header__ul{
@@ -578,7 +604,9 @@ footer{
     }
 
     .header__li--download:hover{
-        background-color: #101010;
+    color: white;
+    background-color: #0085ff;
+    border: solid 2px #0085ff;
     }
 
     .header__li--download:hover::before{
@@ -601,13 +629,24 @@ footer{
 
     .hero__info{
         width: 45%;
-        padding-top: 7rem;
+        padding-top: 6rem;
     }
 
     .hero__h1{
         font-size: 4em;
         padding: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .hero__linkportfolio{
+        padding: 1rem 1.5rem;
+        border-radius: .8rem;
+        font-size: 1.2em;
+        margin-top: 1.6rem;
+    }
+
+    .hero__linkportfolio:hover{
+        border-radius: .8rem;
     }
 
     .hero__imagenes{
@@ -643,6 +682,7 @@ footer{
 
     .servicios{
         margin-bottom: 2rem;
+        margin-top: 1rem;
     }
 
     .servicios__titulo{
@@ -691,7 +731,7 @@ footer{
     }
 
     .sobremi__cajatextos{
-        width: 70%;
+        width: 60%;
     }
 
     .sobremi__titulo{
@@ -704,15 +744,15 @@ footer{
     .sobremi__texto{
         font-size: 1em;
         text-align: left;
+        line-height: 1.5rem;
         padding-right: 4rem;
-        padding-bottom: 2rem;
     }
 
     .sobremi__imagen{
-        width: 30%;
+        width: 40%;
         max-width: max-content;
-        /* padding: 2rem 4rem; */
-        padding-top: 2rem;
+        padding: 3rem;
+        margin: 0 auto;
     }
 
     .sobremi__imagen img{
@@ -783,8 +823,8 @@ footer{
 .portfolio__titulo{
     width: 100%;
     padding-bottom: 1rem;
-    font-size: 4em;
-    font-weight: 400;
+    font-size: 2.5em;
+    font-weight: 600;
     color: #101010;
     text-align: center;
 }
@@ -856,6 +896,10 @@ footer{
 
 
 @media screen and (min-width: 960px){
+    .portfolio__titulo{
+        font-size: 4em;
+    }
+
     .galeria{
         grid-template-columns: repeat(3, 1fr);
         width: 70%;
@@ -895,20 +939,22 @@ footer{
 .proyecto__botonatras{
     color: #101010;
     position: fixed;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     border: 2px solid #101010;
-    background-color: rgb(243, 246, 248);
+    background-color: white;
     border-radius: 8px;
     display: flex;
-    padding: .4rem .3rem;
+    padding: .5rem .4rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: .6rem;
+    margin-top: .5rem;
+    transition: 0.15s;
     
 }
 
 .proyecto__botonatras:hover{
-    background-color: #101010;
+    background-color: #0085ff;
+    border: 2px solid #0085ff;
     color: rgb(243, 246, 248);
 }
 
@@ -922,7 +968,7 @@ footer{
     margin: auto;
     padding: 1.5rem;
     text-align: center;
-    background-color: #0000000b;
+    background-color: #43578e10;
     max-width: 600px;
 }
 
@@ -1061,7 +1107,7 @@ footer{
     width: 100%;
     text-align: center;
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 600;
     color: #101010;
 }
 
@@ -1110,11 +1156,12 @@ footer{
     cursor: pointer;
     transition: 0.2s;
     border-radius: 2rem;
-    background-color: rgb(243, 246, 248);
+    background-color: white;
 }
 
 .contacto__submit:hover{
-    background-color: #101010;
+    background-color: #0085ff;
+    border: solid 2px #0085ff;
     color: rgb(243, 246, 248);
 }
 
