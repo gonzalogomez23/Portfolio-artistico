@@ -27,13 +27,12 @@ function calcular (){
 }
 
 /* GALERÍA PROYECTOS */
+
 let imagenes = document.getElementsByClassName("proyecto__img")
 let capaModal = document.getElementById("capaModal")
 let imgModal = document.getElementById("imgModal")
 let btnCerrar = document.getElementById("btnCerrar")
 let full = document.getElementById("containerproyecto")
-let totalImg = ["img/portraits/Portrait 01.jpg", "img/portraits/Portrait 02.jpg", "img/portraits/Portrait 03.jpg", "img/portraits/Portrait 04.jpg", "img/portraits/Portrait 05.jpg", "img/portraits/Portrait 06.jpg", "img/portraits/Portrait 08.jpg", "img/portraits/Portrait 09.jpg", "img/portraits/Portrait 10.jpg"]
-let imagenInicial = 0
 
 for (let i=0; i < imagenes.length; i++){
         
@@ -49,10 +48,10 @@ for (let i=0; i < imagenes.length; i++){
 }
 
 btnCerrar.addEventListener("click", cerrar)
-        function cerrar() {
-            capaModal.classList.remove("mostrar");
-            full.classList.remove("ocultarcontainer")
-        }
+    function cerrar() {
+        capaModal.classList.remove("mostrar");
+        full.classList.remove("ocultarcontainer")
+    }
 
 
 
