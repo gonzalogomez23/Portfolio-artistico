@@ -14,15 +14,27 @@ for(let i=0; i < apartados.length; i++){
 }
 
 /* COLOR NAVBAR AL SCROLLEAR */
-let header = document.querySelector(".header--scroll")
+ 
+let headerInicio = document.querySelector(".header--inicio")
+window.addEventListener("scroll", calcularInicio)
 
-window.addEventListener("scroll", calcular)
-
-function calcular (){
+function calcularInicio (){
     if (window.pageYOffset > 0){
-        header.classList.add("scroll_web")
+        headerInicio.classList.add("scroll_inicio")
     }else{
-        header.classList.remove("scroll_web")
+        headerInicio.classList.remove("scroll_inicio")
+    }
+}
+
+
+let headerGeneral = document.querySelector(".header--general")
+window.addEventListener("scroll", calcularGeneral)
+
+function calcularGeneral (){
+    if (window.pageYOffset > 0){
+        headerGeneral.classList.add("scroll_general")
+    }else{
+        headerGeneral.classList.remove("scroll_general")
     }
 }
 
