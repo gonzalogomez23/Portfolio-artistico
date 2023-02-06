@@ -11,7 +11,7 @@
     --amarillo: #FFC837;
     --azul: #0085ff;
     --negro: #101010;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.2);
     --box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,10 +70,9 @@ main{
 }
 
 .hero__titulo{
-    color: #101010;
+    color: var(--negro);
     text-align: center;
     width: 100%;
-    display: inline-block;
 }
 
 .hero__h1{
@@ -83,36 +82,37 @@ main{
     font-weight: normal;
 }
 
-.hero__alturaTexto{
-    font-size: 1.1em;
-}
-
 .hero__h2{
     font-size: 1.2em;
     font-weight: 700;
     background: linear-gradient(to right, var(--naranja), var(--amarillo));
     border-radius: .6rem;
     color: white;
-    margin: 1rem auto;
+    margin: auto;
     padding: .3rem .6rem;
     width: fit-content;
     height: min-content;
 }
 
 .hero__linkportfolio{
-    width:fit-content;
-    padding: .8rem 1.3rem;
-    margin: .8rem auto;
-    border-radius: 2rem;
-    font-size: 1em;
     text-align: center;
-    border: solid 3px var(--azul);
-    transition: 0.15s;
+    margin-top: 3rem;
+}
+
+.hero__linkportfolio a{
     color: var(--azul);
+    border: solid 3px var(--azul);
+    width: auto;
+    padding: .8rem 1.2rem;
+    border-radius: 2rem;
+    transition: 0.15s;
     font-weight: 600;
 }
 
-.hero__linkportfolio:hover{
+
+
+
+.hero__linkportfolio a:hover{
     background-color: var(--azul);
     border: solid 3px var(--azul);
     color: white;
@@ -389,14 +389,12 @@ main{
 
     .hero__h1{
         font-size: 4em;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        padding: 1.2rem;
+        margin-bottom: 0;
     }
 
-    .hero__linkportfolio{
+    .hero__linkportfolio a{
         padding: 1rem 1.5rem;
-        font-size: 1.2em;
-        margin-top: 1.6rem;
     }
 
     .hero__imagenes{
@@ -518,8 +516,6 @@ main{
     
     .hero__h1{
         font-size: 5.5em;
-        padding: 1rem;
-        margin-bottom: 1rem;
     }
     
     .hero__h2{
